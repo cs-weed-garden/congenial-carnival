@@ -1,0 +1,14 @@
+/* TEAM */
+Site: Weed Garden
+Developers: Weed Garden Team
+Contact: support@weed-garden.com
+Twitter: https://twitter.com/GrowWithParker
+GitHub: https://github.com/weed-garden
+
+/* SITE INFORMATION */
+Last Updated: 2024-10-05
+Technology: Vue 3, Pinia, Tailwind CSS, Cloudflare, DigitalOcean
+Powered by: Weed Garden ERP
+
+/* THANKS */
+Special Thanks: Cannabis Community, Parker Blunt
