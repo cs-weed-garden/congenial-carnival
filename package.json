@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "defu": "^6.1.4",
     "flowbite": "^2.5.2",
     "nuxt": "^3.13.0",
     "vanilla-cookieconsent": "^3.0.1",
