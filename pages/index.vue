@@ -1,6 +1,6 @@
 <template>
   <!-- Hero Section -->
-  <section class="relative py-20 transition-colors duration-500 lg:py-28 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
+  <section class="relative py-48 transition-colors duration-500 lg:py-56 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
     <div class="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <!-- Left: Text Content -->
@@ -26,20 +26,20 @@
   </section>
 
   <!-- Video Tour Section -->
-  <section class="relative py-28 lg:py-36 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-700 text-light-50 transition-colors border-t border-gray-600">
+  <section class="relative py-40 lg:py-48 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-700 text-light-50 transition-colors border-t border-gray-600">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="mb-12 text-center">
-        <h2 class="mb-6 text-5xl font-black text-primary-200">Welcome to Weed Garden</h2>
-        <p class="text-xl leading-relaxed lg:text-2xl text-secondary-200">
+        <h2 class="mb-6 text-5xl font-black text-primary-100">Welcome to Weed Garden</h2>
+        <p class="text-xl leading-relaxed lg:text-2xl text-secondary-100">
           Take a video tour of Weed Garden's features to streamline your cannabis grow operations.
-          <NuxtLink to="/video-tour" class="underline text-primary-200 hover:text-primary-100">Watch the demo</NuxtLink> for a full walkthrough.
+          <NuxtLink to="/video-tour" class="underline text-primary-100 hover:text-primary-50">Watch the demo</NuxtLink> for a full walkthrough.
         </p>
       </div>
     </div>
   </section>
 
   <!-- Mission Section -->
-  <section class="relative py-20 transition-colors duration-500 lg:py-28 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
+  <section class="relative py-40 lg:py-48 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="flex flex-col justify-center lg:text-left">
         <h2 class="mb-8 text-4xl font-extrabold">
@@ -54,7 +54,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="relative py-28 lg:py-36 bg-gradient-to-b from-dark-900 via-dark-700 to-dark-800 text-light-50 border-t border-gray-700">
+  <section class="relative py-40 lg:py-48 bg-gradient-to-b from-dark-900 via-dark-700 to-dark-800 text-light-50 border-t border-gray-700">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <h2 class="mb-8 text-4xl font-extrabold text-primary-50">
         <span class="font-black">About Weed Garden</span>
@@ -67,7 +67,7 @@
   </section>
 
   <!-- Key Features Summary -->
-  <section class="relative py-20 transition-colors duration-500 lg:py-28 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
+  <section class="relative py-40 lg:py-48 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <h2 class="mb-12 text-5xl font-extrabold text-center">
         <span class="text-6xl font-black text-primary-50">Key</span> Features of Our Cannabis ERP Software
@@ -94,7 +94,7 @@
   </section>
 
   <!-- Signup CTA Section -->
-  <section class="relative py-28 lg:py-36 bg-gradient-to-b from-dark-800 via-dark-600 to-dark-700 text-light-50 border-t border-gray-800">
+  <section class="relative py-40 lg:py-48 bg-gradient-to-b from-dark-800 via-dark-600 to-dark-700 text-light-50 border-t border-gray-800">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <h2 class="mb-8 text-4xl font-extrabold">
         <span class="font-black text-primary-50">Ready</span> to Transform Your Cannabis Business?
