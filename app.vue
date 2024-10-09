@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col min-h-screen bg-dark-800 text-light-50">
-    <a
-        href="#main-content"
+    <NuxtLink
+        to="#main-content"
         @click="focusMainContent"
         class="absolute top-[-40px] left-0 bg-white text-black p-2 z-50 transition-all duration-300 focus:top-0"
     >
       Skip to main content
-    </a>
+    </NuxtLink>
     <Navigation class="sticky top-0 left-0 z-50 w-full shadow-md bg-dark-900 text-light-50" />
     <main id="main-content" tabindex="-1" class="flex-1 overflow-x-hidden overflow-y-auto scrollable-container">
       <NuxtLayout>
@@ -19,7 +19,6 @@
       <span class="sr-only">Back to Top</span>
       <i class="fas fa-arrow-up w-8 h-8"></i>
     </button>
-
   </div>
 </template>
 
