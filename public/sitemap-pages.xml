@@ -1,47 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://weed-garden.com/</loc>
+        <loc>https://marketing.weed-garden.com/</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://weed-garden.com/about</loc>
+        <loc>https://marketing.weed-garden.com/video-tour</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://weed-garden.com/login</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://weed-garden.com/reset-password</loc>
+        <loc>https://marketing.weed-garden.com/features</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://weed-garden.com/privacy-policy</loc>
+        <loc>https://marketing.weed-garden.com/mission</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://weed-garden.com/disclaimer</loc>
+        <loc>https://marketing.weed-garden.com/privacy-policy</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://weed-garden.com/terms-of-service</loc>
+        <loc>https://marketing.weed-garden.com/disclaimer</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://weed-garden.com/glossary</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://marketing.weed-garden.com/terms-of-service</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://weed-garden.com/contact</loc>
+        <loc>https://marketing.weed-garden.com/accessibility</loc>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>

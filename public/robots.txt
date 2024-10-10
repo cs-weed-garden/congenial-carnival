@@ -6,9 +6,9 @@ Disallow:
 Crawl-delay: 10
 
 # Sitemaps for better crawling
-Sitemap: https://weed-garden.com/sitemap.xml
+Sitemap: https://marketing.weed-garden.com/sitemap-pages.xml
 Sitemap: https://blog.weed-garden.com/sitemap.xml
 Sitemap: https://blog.weed-garden.com/sitemap-posts.xml
 
 # Optional: Preferred domain (if needed)
-Host: https://weed-garden.com
+Host: https://marketing.weed-garden.com
