@@ -1,26 +1,34 @@
-FROM node:20.8.0
+# Stage 1: Build the app
+FROM node:20.8.0 as builder
 
-# Set the working directory
 WORKDIR /usr/src/app
 
-# Copy the package.json and lock file first to leverage Docker layer caching
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci
+# Install dependencies for building the app
+RUN npm ci --production=false
 
-# Copy the rest of the app files
+# Copy the rest of the application code
 COPY . .
 
-# Set environment to production
-ENV NODE_ENV=production
-
-# Build the app for SSR production
+# Build the Nuxt app
 RUN npm run build
 
-# Expose the desired port
+# Stage 2: Create the final production image
+FROM node:20.8.0-slim
+
+WORKDIR /usr/src/app
+
+# Copy only the production dependencies and the build artifacts
+COPY package*.json ./
+RUN npm ci --only=production
+
+# Copy the built app from the builder stage
+COPY --from=builder /usr/src/app/.output ./.output
+
+# Expose the necessary port
 EXPOSE 3000
 
-# Run the SSR server in production mode
-# Start the Nuxt server in production mode using the correct command
+# Run the app
 CMD ["node", ".output/server/index.mjs"]
