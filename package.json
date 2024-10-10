@@ -5,6 +5,7 @@
   "scripts": {
     "build": "npm install --production=false && nuxt build",
     "dev": "nuxt dev",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -24,8 +25,5 @@
     "daisyui": "^4.12.12",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13"
-  },
-  "engines": {
-    "node": "20.8.0"
   }
 }
