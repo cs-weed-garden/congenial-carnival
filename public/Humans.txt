@@ -7,7 +7,7 @@ GitHub: https://github.com/weed-garden
 
 /* SITE INFORMATION */
 Last Updated: 2024-10-05
-Technology: Vue 3, Pinia, Tailwind CSS, Cloudflare, DigitalOcean
+Technology: NuxtJS, Pinia, Tailwind CSS, Cloudflare, DigitalOcean
 Powered by: Weed Garden ERP
 
 /* THANKS */

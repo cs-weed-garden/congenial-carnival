@@ -1,29 +1,36 @@
 <template>
-  <!-- Hero Section -->
-  <section class="relative py-48 transition-colors duration-500 lg:py-56 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
-    <div class="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <!-- Left: Text Content -->
-        <div class="flex flex-col text-center lg:text-left">
-          <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-light-50">
-            <span class="font-black text-7xl lg:text-8xl text-primary-50">Weed</span>
-            <span class="text-6xl text-light-50">Garden</span><br>
-            Cannabis Grow Tracking and ERP Solution
-          </h1>
-          <p class="mt-8 text-lg leading-relaxed lg:text-xl text-secondary-200">
-            Weed Garden empowers you to manage every aspect of your cannabis grow operation, from seed-to-sale tracking, inventory management, and regulatory compliance to analytics and cost tracking.
-          </p>
-        </div>
+<!-- Hero Section -->
+<section class="relative py-48 transition-colors duration-500 lg:py-56 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50" style="background-image: url(/img/AdobeStock_401509003.jpeg); background-size: cover; background-position: center;">
+  <div class="relative z-10 px-4 mx-auto max-w-8xl sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-[3fr,2fr] gap-16 items-center">
+      <!-- Left: Text Content -->
+      <div class="flex flex-col text-center lg:text-left bg-opacity-90 p-12 rounded-lg" style="background: rgba(0, 0, 0, 0.8); margin-right: 20px;">
+        <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-light-50">
+          <span class="font-black text-7xl lg:text-8xl text-primary-50">Weed</span>
+          <span class="text-6xl text-light-50">Garden</span><br>
+          Track Your Cannabis Grow with Historical Reporting
+        </h1>
+        <p class="mt-8 text-lg leading-relaxed lg:text-xl text-secondary-200">
+          We're in closed beta, inviting a small group to test Weed Garden before public launch.<br /> Sign up now for early access and help shape the future of grow tracking software!
+        </p>
+        <ul class="mt-4 text-lg leading-relaxed lg:text-xl text-secondary-200">
+          <li>- Track plant growth from seed to harvest.</li>
+          <li>- Access detailed historical reports to optimize future grows.</li>
+          <li>- Ensure compliance with regulatory requirements.</li>
+        </ul>
+        <button @click="scrollToCTA" class="mt-8 px-8 py-4 text-xl font-bold transition-transform rounded-lg shadow-lg bg-tertiary-400 hover:bg-tertiary-600 text-dark focus:outline-none focus:ring-4 focus:ring-tertiary-200 lg:text-2xl hover:text-light hover:shadow-2xl">
+          Sign Up for Updates
+        </button>
+      </div>
 
-        <!-- Right: Button -->
-        <div class="flex justify-center lg:justify-end">
-          <button @click="scrollToCTA" class="px-8 py-4 text-xl font-bold transition-transform rounded-lg shadow-lg bg-tertiary-400 hover:bg-tertiary-600 text-dark focus:outline-none focus:ring-4 focus:ring-tertiary-200 lg:text-2xl hover:text-light hover:shadow-2xl">
-            Get Started with Cannabis ERP Software
-          </button>
-        </div>
+      <!-- Right: Image -->
+      <div class="hidden lg:flex justify-center lg:justify-end">
+        <img src="https://source.unsplash.com/random/?plant,garden" alt="Cannabis grow" class="rounded-lg shadow-lg">
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Video Tour Section -->
   <section class="relative py-40 lg:py-48 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-700 text-light-50 transition-colors border-t border-gray-600">
