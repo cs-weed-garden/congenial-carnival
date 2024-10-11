@@ -18,7 +18,7 @@
           </div>
   
           <div class="flex items-center">
-           <NuxtLink external href="https://app.weed-garden.com/login" class="px-4 py-2 ml-3 text-sm font-medium text-white rounded-md bg-primary hover:bg-primary-light">Login</NuxtLink>
+           <a href="https://app.weed-garden.com/login" class="px-4 py-2 ml-3 text-sm font-medium text-white rounded-md bg-primary hover:bg-primary-light">Login</a>
           </div>
   
           <div class="flex sm:hidden">
