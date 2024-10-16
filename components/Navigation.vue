@@ -11,13 +11,13 @@
       <div class="flex items-center md:order-2">
         <a href="https://app.weed-garden.com/login" class="text-white bg-primary hover:bg-primary-light font-medium rounded-lg text-sm px-4 py-2 focus:outline-none">
           
-            
+            <i class="fa-light fa-sign-in-alt mr-2"></i>
           
           Login
         </a>
         <button @click="toggleMobileMenu" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none">
           
-            
+            <i class="fa-light fa-bars"></i>
           
         </button>
       </div>
@@ -28,7 +28,7 @@
           <li>
             <a href="/" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
               
-                
+                <i class="fa-light fa-house mr-2"></i>
               
               Home
             </a>
@@ -36,7 +36,7 @@
           <li>
             <a href="/video-tour" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
               
-                
+                <i class="fa-light fa-video mr-2"></i>
               
               Video Tour
             </a>
@@ -44,7 +44,7 @@
           <li>
             <a href="/features" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
               
-                
+                <i class="fa-light fa-tools mr-2"></i>
               
               Features
             </a>
@@ -52,7 +52,7 @@
           <li>
             <a href="/pricing" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
               
-                
+                <i class="fa-light fa-tags mr-2"></i>
               
               Pricing
             </a>
@@ -62,11 +62,11 @@
           <li class="relative">
             <button @click="toggleMegaMenu" class="flex items-center justify-between w-full py-2 px-3 font-medium text-white hover:bg-gray-700 rounded-md md:w-auto">
               
-                
+                <i class="fa-light fa-ellipsis-h mr-2"></i>
               
               More
               
-                
+                <i class="fa-light fa-chevron-down ml-2"></i>
               
             </button>
 
@@ -77,7 +77,7 @@
                   <a href="/affiliate-links" class="block hover:bg-gray-700 p-2 rounded-lg" @click="closeMegaMenu">
                     <div class="flex items-center">
                       
-                        
+                        <i class="fa-solid fa-cart-shopping mr-2 text-lg align-middle"></i>
                       
                       Amazon Affiliate Links
                     </div>
@@ -87,7 +87,7 @@
                   <a href="/blog" class="block hover:bg-gray-700 p-2 rounded-lg" @click="closeMegaMenu">
                     <div class="flex items-center">
                       
-                        
+                        <i class="fa-solid fa-blog mr-2 text-lg align-middle"></i>
                       
                       Blog
                     </div>
@@ -97,7 +97,7 @@
                   <a href="/mission" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
                     <div class="flex items-center">
                       
-                        
+                        <i class="fa-solid fa-badge-check mr-2 text-lg align-middle"></i>
                       
                       Mission
                     </div>
@@ -107,7 +107,7 @@
                   <a href="/about-us" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
                     <div class="flex items-center">
                       
-                        
+                        <i class="fa-solid fa-handshake mr-2 text-lg align-middle"></i>
                       
                       About Us
                     </div>
@@ -117,7 +117,7 @@
                   <a href="https://chronictrails.com" target="_blank" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
                     <div class="flex items-center">
                       
-                        
+                        <i class="fa-solid fa-map mr-2 text-lg align-middle"></i>
                       
                       Chronic Trails
                     </div>
