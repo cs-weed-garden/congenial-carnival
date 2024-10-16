@@ -7,21 +7,21 @@
         <!-- Legal Section -->
         <nav class="mb-6">
           <h2 class="footer-title">Legal</h2>
-          <NuxtLink to="/privacy-policy" class="flex items-center mb-2 link link-hover text-secondary-100">
+          <a href="/privacy-policy" class="flex items-center mb-2 link link-hover text-secondary-100">
             <client-only>
               <i class="mr-2 fal fa-shield-alt"></i>
             </client-only> Privacy Policy
-          </NuxtLink>
-          <NuxtLink to="/terms-of-service" class="flex items-center mb-2 link link-hover text-secondary-100">
+          </a>
+          <a href="/terms-of-service" class="flex items-center mb-2 link link-hover text-secondary-100">
             <client-only>
               <i class="mr-2 fal fa-file-contract"></i>
             </client-only> Terms of Service
-          </NuxtLink>
-          <NuxtLink to="/disclaimer" class="flex items-center mb-2 link link-hover text-secondary-100">
+          </a>
+          <a href="/disclaimer" class="flex items-center mb-2 link link-hover text-secondary-100">
             <client-only>
               <i class="mr-2 fal fa-exclamation-triangle"></i>
             </client-only> Disclaimer
-          </NuxtLink>
+          </a>
         </nav>
 
         <!-- Social Section -->
@@ -38,7 +38,7 @@
                 <i class="text-2xl fab fa-youtube"></i>
               </client-only>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61566402899772" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)">
+            <a href="https://www.facebook.com/WeedGardenERP" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)">
               <client-only>
                 <i class="text-2xl fab fa-facebook"></i>
               </client-only>
@@ -83,7 +83,7 @@
           <h2 class="footer-title">Resources</h2>
 
           <!-- Sitemap -->
-          <a href="/sitemap_index.xml" rel="noopener noreferrer" class="flex items-center mb-2 link link-hover text-secondary-100">
+          <a href="/sitemap.xml" rel="noopener noreferrer" class="flex items-center mb-2 link link-hover text-secondary-100">
             <client-only>
               <i class="mr-2 fal fa-sitemap"></i>
             </client-only> Sitemap
@@ -104,11 +104,11 @@
           </a>
 
           <!-- Accessibility Statement -->
-          <NuxtLink to="/accessibility" class="flex items-center mb-2 link link-hover text-secondary-100">
+          <a href="/accessibility" class="flex items-center mb-2 link link-hover text-secondary-100">
             <client-only>
               <i class="mr-2 fal fa-universal-access"></i>
             </client-only> Accessibility Statement
-          </NuxtLink>
+          </a>
         </nav>
 
         <!-- Contact Information Section -->

@@ -1,70 +1,160 @@
 <template>
-    <nav class="bg-dark-900">
-      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center">
-            <img class="w-auto h-8" src="/site-logo.webp" alt="Weed Garden Icon">
-            <span class="ml-2 text-xl font-bold text-white">Weed Garden</span>
-          </div>
-  
-          <div class="sm:block">
-            <div class="flex items-baseline ml-10 space-x-4">
-              <NuxtLink to="/" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700">Home</NuxtLink>
-              <NuxtLink to="/video-tour" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700">Video Tour</NuxtLink>
-              <NuxtLink to="/features" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700">Features</NuxtLink>
-              <NuxtLink to="/mission" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700">Mission</NuxtLink>
-              <NuxtLink to="/about-us" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700">About Us</NuxtLink>
-            </div>
-          </div>
-  
-          <div class="flex items-center">
-           <a href="https://app.weed-garden.com/login" class="px-4 py-2 ml-3 text-sm font-medium text-white rounded-md bg-primary hover:bg-primary-light">Login</a>
-          </div>
-  
-          <div class="flex sm:hidden">
-            <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" @click="toggleMobileMenu">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-6 h-6" v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-              </svg>
-              <svg class="w-6 h-6" v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+  <nav class="bg-dark-900 border-gray-200">
+    <div class="flex flex-wrap items-center justify-between lg:max-w-7xl mx-auto p-4">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-3">
+        <img src="/site-logo.webp" class="h-8" alt="Weed Garden Icon">
+        <span class="self-center text-2xl font-semibold text-white">Weed Garden</span>
+      </a>
+
+      <!-- Login Button -->
+      <div class="flex items-center md:order-2">
+        <a href="https://app.weed-garden.com/login" class="text-white bg-primary hover:bg-primary-light font-medium rounded-lg text-sm px-4 py-2 focus:outline-none">
+          <client-only>
+            <i class="fa-light fa-sign-in-alt mr-2"></i>
+          </client-only>
+          Login
+        </a>
+        <button @click="toggleMobileMenu" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none">
+          <client-only>
+            <i class="fa-light fa-bars"></i>
+          </client-only>
+        </button>
+      </div>
+
+      <!-- Main Navigation Links + Mega Menu -->
+      <div id="mega-menu-icons" :class="mobileMenuOpen ? 'flex' : 'hidden' " class="items-center justify-between w-full md:flex md:w-auto md:order-1">
+        <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+          <li>
+            <a href="/" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
+              <client-only>
+                <i class="fa-light fa-house mr-2"></i>
+              </client-only>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/video-tour" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
+              <client-only>
+                <i class="fa-light fa-video mr-2"></i>
+              </client-only>
+              Video Tour
+            </a>
+          </li>
+          <li>
+            <a href="/features" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
+              <client-only>
+                <i class="fa-light fa-tools mr-2"></i>
+              </client-only>
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="/pricing" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
+              <client-only>
+                <i class="fa-light fa-tags mr-2"></i>
+              </client-only>
+              Pricing
+            </a>
+          </li>
+
+          <!-- "More" Mega Menu -->
+          <li class="relative">
+            <button @click="toggleMegaMenu" class="flex items-center justify-between w-full py-2 px-3 font-medium text-white hover:bg-gray-700 rounded-md md:w-auto">
+              <client-only>
+                <i class="fa-light fa-ellipsis-h mr-2"></i>
+              </client-only>
+              More
+              <client-only>
+                <i class="fa-light fa-chevron-down ml-2"></i>
+              </client-only>
             </button>
-          </div>
-        </div>
+
+            <!-- Mega Menu Content -->
+            <div v-if="megaMenuOpen" class="absolute z-10 w-64 text-sm bg-gray-800 rounded-lg shadow-md">
+              <ul class="py-4 px-4 text-white space-y-2">
+                <li>
+                  <a href="/affiliate-links" class="block hover:bg-gray-700 p-2 rounded-lg" @click="closeMegaMenu">
+                    <div class="flex items-center">
+                      <client-only>
+                        <i class="fa-solid fa-cart-shopping mr-2 text-lg align-middle"></i>
+                      </client-only>
+                      Amazon Affiliate Links
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/blog" class="block hover:bg-gray-700 p-2 rounded-lg" @click="closeMegaMenu">
+                    <div class="flex items-center">
+                      <client-only>
+                        <i class="fa-solid fa-blog mr-2 text-lg align-middle"></i>
+                      </client-only>
+                      Blog
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/mission" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
+                    <div class="flex items-center">
+                      <client-only>
+                        <i class="fa-solid fa-badge-check mr-2 text-lg align-middle"></i>
+                      </client-only>
+                      Mission
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/about-us" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
+                    <div class="flex items-center">
+                      <client-only>
+                        <i class="fa-solid fa-handshake mr-2 text-lg align-middle"></i>
+                      </client-only>
+                      About Us
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://chronictrails.com" target="_blank" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
+                    <div class="flex items-center">
+                      <client-only>
+                        <i class="fa-solid fa-map mr-2 text-lg align-middle"></i>
+                      </client-only>
+                      Chronic Trails
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
-  
-      <!-- Mobile Menu -->
-      <div v-if="mobileMenuOpen" class="sm:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <NuxtLink to="/" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-gray-700">Home</NuxtLink>
-          <NuxtLink to="/cannabis-erp-software" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-gray-700">ERP Software</NuxtLink>
-          <NuxtLink to="/features" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-gray-700">Features</NuxtLink>
-          <NuxtLink to="/pricing" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-gray-700">Pricing</NuxtLink>
-          <NuxtLink to="/blog" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-gray-700">Blog</NuxtLink>
-          <NuxtLink to="/contact" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-gray-700">Contact</NuxtLink>
-        </div>
-      </div>
-    </nav>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        mobileMenuOpen: false,
-      };
-    },
-    methods: {
-      toggleMobileMenu() {
-        this.mobileMenuOpen = !this.mobileMenuOpen;
-      }
-    }
-  };
-  </script>
-  
-  <style scoped>
-  /* Scoped styles here if needed */
-  </style>
-  
+    </div>
+  </nav>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import { useRouter } from '#app';
+
+const mobileMenuOpen = ref(false);
+const megaMenuOpen = ref(false);
+
+function toggleMobileMenu() {
+  mobileMenuOpen.value = !mobileMenuOpen.value;
+}
+
+function toggleMegaMenu() {
+  megaMenuOpen.value = !megaMenuOpen.value;
+}
+
+function closeMegaMenu() {
+  megaMenuOpen.value = false;
+}
+
+// Watch for route changes and close the menu
+const router = useRouter();
+router.afterEach(() => {
+  mobileMenuOpen.value = false;  // Close mobile menu
+  megaMenuOpen.value = false;    // Close mega menu
+});
+</script>

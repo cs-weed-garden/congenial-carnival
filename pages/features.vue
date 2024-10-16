@@ -7,132 +7,177 @@
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Feature 1: Seed-to-Sale Tracking -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-seedling text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-seedling text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Seed-to-Sale</span> Cannabis Tracking
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Our advanced seed-to-sale tracking system provides total visibility into every stage of your grow operation, ensuring compliance and quality control.
+              Get full visibility into every step of the grow process, from planting to final sale, ensuring compliance and tracking.
             </p>
           </div>
         </div>
 
         <!-- Feature 2: Inventory Management -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-warehouse text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-warehouse text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
-              <span class="text-primary-50">Real-Time</span> Cannabis Inventory Management
+              <span class="text-primary-50">Real-Time</span> Inventory Management
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Manage your cannabis inventory efficiently with live updates, low stock alerts, and analytics for optimized supply management.
+              Monitor cannabis stock with real-time updates, alerts, and analytics, giving you complete control over your supply.
             </p>
           </div>
         </div>
 
-        <!-- Feature 3: Cannabis Compliance Tools -->
+        <!-- Feature 3: Regulatory Compliance -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-check-circle text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-check-circle text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
-              <span class="text-primary-50">Regulatory</span> Cannabis Compliance
+              <span class="text-primary-50">Regulatory</span> Compliance
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Stay compliant with local, state, and federal cannabis regulations with our robust compliance tools built into the ERP software.
+              While not yet integrated with METRC, our compliance tools will support regulatory requirements for licensed operators as we evolve.
             </p>
           </div>
         </div>
 
-        <!-- Feature 4: Automated Label Generation -->
+        <!-- Feature 4: Label Generation -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-tag text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-tag text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
-              <span class="text-primary-50">Automated</span> Label Generation for Cannabis Products
+              <span class="text-primary-50">Automated</span> Label Generation
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Easily generate compliant labels for your products, ensuring you meet all packaging and labeling regulations.
+              Generate compliant labels for packaging, ensuring all legal and regulatory packaging requirements are met.
             </p>
           </div>
         </div>
 
-        <!-- Feature 5: Cost Tracking for Cannabis Operations -->
+        <!-- Feature 5: Cost Tracking -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-dollar-sign text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-dollar-sign text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Comprehensive</span> Cost Tracking
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Monitor costs in real-time for each cannabis lot, enabling effective budgeting and profitability tracking.
+              Track expenses at each stage of your cannabis operations, helping you optimize your budget and profitability.
             </p>
           </div>
         </div>
 
-        <!-- Feature 6: In-Depth Reporting & Analytics -->
+        <!-- Feature 6: Reporting & Analytics -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-chart-pie text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-chart-pie text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">In-Depth</span> Reporting & Analytics
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Access comprehensive reporting and analytics to make data-driven decisions that improve yields and overall productivity.
+              Leverage data-driven reports and analytics to make informed decisions, improve yields, and enhance productivity.
             </p>
           </div>
         </div>
 
-        <!-- Feature 7: Image Tracking for Cannabis Growth -->
+        <!-- Feature 7: Image Tracking -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-camera text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-camera text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
-              <span class="text-primary-50">Progress</span> Image Tracking
+              <span class="text-primary-50">Image</span> Tracking
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Document your grow process with image tracking, ensuring visual progress is logged from seed to harvest.
+              Document your grow's visual progress with image tracking from seed to harvest for complete grow documentation.
             </p>
           </div>
         </div>
 
         <!-- Feature 8: Source Management -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-database text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-database text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Cannabis</span> Source Management
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Track your cannabis plant genetics and sources, ensuring quality control and compliance with regulations.
+              Track your cannabis genetics and source information for better quality control and regulatory compliance.
             </p>
           </div>
         </div>
 
         <!-- Feature 9: Notes & Timeline Management -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <i class="mr-6 text-5xl fas fa-sticky-note text-primary-50" aria-hidden="true"></i>
+          <client-only>
+            <i class="mr-6 text-5xl fas fa-sticky-note text-primary-50" aria-hidden="true"></i>  
+          </client-only>
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Notes</span> & Timeline Management
             </h3>
             <p class="leading-relaxed text-secondary-200">
-              Track notes, milestones, and timelines to ensure a comprehensive record of your cannabis grow operation.
+              Keep detailed notes and track important milestones in your grow operation for better documentation.
             </p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 </template>
 
-<script>
-export default {
-  name: 'FeaturesPage'
-}
-</script>
 
-<style scoped>
-/* Additional styles can go here if needed */
-</style>
+<script setup>
+useHead({
+  title: 'Comprehensive Features of Weed Garden | Cannabis ERP Software',
+  meta: [
+    { name: 'description', content: 'Explore the comprehensive features of Weed Garden - Seed-to-sale tracking, inventory management, compliance tools, automated label generation, cost tracking, and in-depth analytics for cannabis grow operations.' },
+    { name: 'keywords', content: 'cannabis ERP, seed-to-sale tracking, cannabis inventory management, cannabis compliance, automated labels, cost tracking, cannabis analytics' },
+    { property: 'og:title', content: 'Comprehensive Features of Weed Garden - Cannabis ERP Software' },
+    { property: 'og:description', content: 'Discover all the powerful features Weed Garden has to offer for cannabis growers. Track costs, manage inventory, stay compliant, and make data-driven decisions.' },
+    { property: 'og:image', content: 'https://weed-garden.com/img/features-preview.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://weed-garden.com/features' },
+    { name: 'twitter:title', content: 'Comprehensive Features of Weed Garden - Cannabis ERP Software' },
+    { name: 'twitter:description', content: 'Explore features like seed-to-sale tracking, inventory management, and more, specifically designed for cannabis growers.' },
+    { name: 'twitter:image', content: 'https://weed-garden.com/img/features-preview.png' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Weed Garden - Comprehensive Features",
+        "description": "Explore the powerful features of Weed Garden - ERP software designed to manage all aspects of cannabis cultivation from seed to sale.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Weed Garden Inc.",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://weed-garden.com/site-logo.webp"
+          }
+        }
+      })
+    }
+  ]
+});
+</script>

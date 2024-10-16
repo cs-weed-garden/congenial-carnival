@@ -59,3 +59,41 @@
     </div>
   </section>
 </template>
+<script setup>
+import { useHead } from '@unhead/vue';
+
+useHead({
+  title: 'Accessibility Statement | Weed Garden',
+  meta: [
+    { name: 'description', content: 'Read our Accessibility Statement to learn how Weed Garden is committed to providing an inclusive and accessible experience for all users, in compliance with WCAG 2.1 AA standards.' },
+    { name: 'keywords', content: 'accessibility, WCAG compliance, inclusive experience, accessible website, assistive technology' },
+    { property: 'og:title', content: 'Accessibility Statement | Weed Garden' },
+    { property: 'og:description', content: 'We are committed to making Weed Garden accessible to everyone. Read our Accessibility Statement to learn how we maintain WCAG 2.1 AA standards.' },
+    { property: 'og:image', content: 'https://weed-garden.com/img/accessibility-preview.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://weed-garden.com/accessibility-statement' },
+    { name: 'twitter:title', content: 'Accessibility Statement | Weed Garden' },
+    { name: 'twitter:description', content: 'Discover our commitment to web accessibility and inclusion for everyone. Learn how we uphold WCAG 2.1 AA standards at Weed Garden.' },
+    { name: 'twitter:image', content: 'https://weed-garden.com/img/accessibility-preview.png' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Accessibility Statement | Weed Garden",
+        "description": "We are dedicated to ensuring an accessible web experience for everyone. Learn about our accessibility efforts and WCAG 2.1 AA compliance.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Weed Garden Inc.",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://weed-garden.com/site-logo.webp"
+          }
+        }
+      })
+    }
+  ]
+});
+</script>

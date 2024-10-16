@@ -27,6 +27,10 @@
         </p>
         <p class="mb-8 text-lg text-secondary-200">The Company does not warrant that the Service is free of viruses or other harmful components.</p>
 
+        <h2 class="mb-6 text-4xl font-extrabold text-light-100">Product Status Disclaimer</h2>
+        <p class="mb-8 text-lg text-secondary-200">
+          Weed Garden is currently in the development phase. The features and services described on the website are subject to change as we continue building the platform. Please be aware that some features, including regulatory compliance integration (e.g., METRC), are planned but not yet available. Follow our progress as we move toward full implementation.
+        </p>
         <h2 class="mb-6 text-4xl font-extrabold text-light-100">External Links Disclaimer</h2>
         <p class="mb-8 text-lg text-secondary-200">The Service may contain links to external websites that are not provided or maintained by or in any way affiliated with the Company.</p>
         <p class="mb-8 text-lg text-secondary-200">Please note that the Company does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
@@ -62,3 +66,41 @@
     </div>
   </section>
 </template>
+<script setup>
+import { useHead } from '@unhead/vue';
+
+useHead({
+  title: 'Disclaimer | Weed Garden',
+  meta: [
+    { name: 'description', content: 'Read the Disclaimer for Weed Garden, outlining our limitations of liability, fair use policy, and legal obligations.' },
+    { name: 'keywords', content: 'Weed Garden disclaimer, legal disclaimer, liability, fair use policy, cannabis ERP' },
+    { property: 'og:title', content: 'Disclaimer | Weed Garden' },
+    { property: 'og:description', content: 'Understand Weed Garden’s Disclaimer regarding liability, fair use policy, and legal obligations.' },
+    { property: 'og:image', content: 'https://weed-garden.com/img/disclaimer-preview.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://weed-garden.com/disclaimer' },
+    { name: 'twitter:title', content: 'Disclaimer | Weed Garden' },
+    { name: 'twitter:description', content: 'Review Weed Garden’s Disclaimer for limitations of liability, fair use policy, and legal obligations.' },
+    { name: 'twitter:image', content: 'https://weed-garden.com/img/disclaimer-preview.png' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Disclaimer | Weed Garden",
+        "description": "Read the Disclaimer for Weed Garden, outlining our limitations of liability, fair use policy, and legal obligations.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Weed Garden Inc.",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://weed-garden.com/site-logo.webp"
+          }
+        }
+      })
+    }
+  ]
+});
+</script>

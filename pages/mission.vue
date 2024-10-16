@@ -37,9 +37,45 @@
   </section>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { useHead } from '@unhead/vue';
+
+useHead({
+  title: 'Our Mission - Empowering Cannabis Growers | Weed Garden',
+  meta: [
+    { name: 'description', content: 'Learn about the mission of Weed Garden - to empower cannabis cultivators with intuitive tools, simplify operations, boost productivity, and ensure compliance.' },
+    { name: 'keywords', content: 'cannabis cultivation, cannabis ERP, cannabis growers, grow management, compliance tools, productivity, seed-to-sale' },
+    { property: 'og:title', content: 'Our Mission - Empowering Cannabis Growers | Weed Garden' },
+    { property: 'og:description', content: 'At Weed Garden, our mission is to empower cannabis growers with tools that simplify operations, boost productivity, and ensure compliance.' },
+    { property: 'og:image', content: 'https://weed-garden.com/img/mission-medium.webp' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://weed-garden.com/our-mission' },
+    { name: 'twitter:title', content: 'Our Mission - Empowering Cannabis Growers | Weed Garden' },
+    { name: 'twitter:description', content: 'Discover how Weed Garden empowers cannabis cultivators with intuitive tools to simplify operations and ensure compliance.' },
+    { name: 'twitter:image', content: 'https://weed-garden.com/img/mission-medium.webp' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Our Mission - Weed Garden",
+        "description": "Learn about the mission of Weed Garden - to empower cannabis cultivators with intuitive tools, simplify operations, boost productivity, and ensure compliance.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Weed Garden Inc.",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://weed-garden.com/site-logo.webp"
+          }
+        }
+      })
+    }
+  ]
+});
 </script>
+
 
 <style>
 /* Add your custom styles here if needed */

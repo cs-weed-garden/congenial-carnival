@@ -1,6 +1,5 @@
 <template>
   <section class="relative py-20 transition-colors duration-500 lg:py-28 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
-
     <div class="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="text-left">
         <h1 class="mb-6 text-5xl font-extrabold tracking-tight text-primary-50 sm:text-6xl">Terms of Service</h1>
@@ -11,14 +10,19 @@
           These Terms of Service ("Terms") govern your access to and use of the Weed Garden app. By accessing or using the app, you agree to be bound by these Terms.
         </p>
 
+        <h2 class="mb-6 text-4xl font-extrabold text-light-100">Beta Disclaimer</h2>
+        <p class="mb-8 text-lg text-secondary-200">
+          The Weed Garden app is currently in beta and subject to change at any time. By using the app during this phase, you acknowledge that it may contain bugs or experience disruptions, and Weed Garden is not liable for any issues or damages. 
+        </p>
+
+        <h2 class="mb-6 text-4xl font-extrabold text-light-100">Legal Use Only</h2>
+        <p class="mb-8 text-lg text-secondary-200">
+          By using Weed Garden, you confirm that your use of this app is legal in your jurisdiction. The app must only be used for cannabis cultivation activities where it is lawfully allowed.
+        </p>
+
         <h2 class="mb-6 text-4xl font-extrabold text-light-100">Minimum Age Requirement</h2>
         <p class="mb-8 text-lg text-secondary-200">
           Users must be at least 18 years old (or the legal age of majority in their jurisdiction) to use the Weed Garden app. By accessing or using the app, you confirm that you meet this age requirement.
-        </p>
-
-        <h2 class="mb-6 text-4xl font-extrabold text-light-100">Beta Disclaimer</h2>
-        <p class="mb-8 text-lg text-secondary-200">
-          The Weed Garden app is currently in beta and may contain bugs or experience disruptions. Use of the app during this phase is at your own risk, and Weed Garden is not liable for any issues or damages resulting from such use.
         </p>
 
         <h2 class="mb-6 text-4xl font-extrabold text-light-100">License and Access</h2>
@@ -67,3 +71,41 @@
     </div>
   </section>
 </template>
+
+<script setup>
+
+useHead({
+  title: 'Terms of Service | Weed Garden',
+  meta: [
+    { name: 'description', content: 'Review the Terms of Service for Weed Garden. Learn about usage guidelines, user responsibilities, prohibited activities, and limitations of liability for the Weed Garden app.' },
+    { name: 'keywords', content: 'Weed Garden, terms of service, cannabis ERP, usage guidelines, user responsibilities, legal information, liability, beta software, legal use' },
+    { property: 'og:title', content: 'Terms of Service | Weed Garden' },
+    { property: 'og:description', content: 'Understand the terms and conditions for using the Weed Garden app, including user responsibilities, beta disclaimer, and legal usage guidelines.' },
+    { property: 'og:image', content: 'https://weed-garden.com/img/terms-preview.png' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://weed-garden.com/terms-of-service' },
+    { name: 'twitter:title', content: 'Terms of Service | Weed Garden' },
+    { name: 'twitter:description', content: 'Review Weed Garden’s Terms of Service, including beta disclaimer, legal usage, and user responsibilities.' },
+    { name: 'twitter:image', content: 'https://weed-garden.com/img/terms-preview.png' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Terms of Service | Weed Garden",
+        "description": "Review the Terms of Service for Weed Garden, including user guidelines, prohibited activities, legal use, and beta disclaimer.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Weed Garden Inc.",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://weed-garden.com/site-logo.webp"
+          }
+        }
+      })
+    }
+  ]
+});
+</script>

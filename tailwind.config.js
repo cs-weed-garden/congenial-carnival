@@ -3,6 +3,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
+        '*.vue',
         './pages/**/*.{html,js,jsx,ts,tsx,vue}',
         './components/**/*.{html,js,jsx,tx,tsx,vue}',
         './node_modules/flowbite/**/*.js',
@@ -71,7 +72,8 @@ module.exports = {
     },
     plugins: [
         require('daisyui'),
-        require('flowbite/plugin')
+        require('flowbite/plugin'),
+        require('@tailwindcss/aspect-ratio'),
     ],
     daisyui: {
         themes: [],

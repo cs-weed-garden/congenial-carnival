@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+  ssr: true,
   devtools: { enabled: true },
   css: ['~/assets/reset.css', '~/assets/main.css'],
   postcss: {
@@ -49,20 +50,6 @@ export default defineNuxtConfig({
       script: [
         { src: 'https://kit.fontawesome.com/26c2ffa3fe.js', crossorigin: 'anonymous' },
         {
-          src: '/partytown/partytown.js',
-          async: true
-        },
-        {
-          type: 'text/partytown',
-          dataCategory: 'analytics',
-          innerHTML: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtag/js?id=G-MNXFHMTM28';f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','G-MNXFHMTM28');`
-        },
-        {
           type: 'application/ld+json',
           innerHTML: JSON.stringify({
             "@context": "https://schema.org",
@@ -80,5 +67,5 @@ export default defineNuxtConfig({
         { children: '<p>Weed Garden requires JavaScript to function properly. Please enable JavaScript in your browser.</p>' }
       ]
     }
-  }
+  },
 });
