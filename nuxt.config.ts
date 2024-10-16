@@ -3,12 +3,14 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
   css: ['~/assets/reset.css', '~/assets/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   app: {
     head: {
       title: 'Weed Garden - Comprehensive Cannabis ERP Software for Growers',
@@ -68,4 +70,6 @@ export default defineNuxtConfig({
       ]
     }
   },
+
+  modules: ['@vesp/nuxt-fontawesome'],
 });
