@@ -22,7 +22,7 @@ useHead({
         "name": "Weed Garden ERP Software",
         "description": "Explore our flexible pricing options for Weed Garden cannabis ERP software. Pay what you want or start for free and upgrade as your needs grow.",
         "brand": {
-          "@type": "Organization",
+          "@type": "Brand",
           "name": "Weed Garden Inc.",
           "logo": {
             "@type": "ImageObject",
@@ -33,26 +33,95 @@ useHead({
           {
             "@type": "Offer",
             "url": "https://weed-garden.com/pricing",
+            "image": "https://weed-garden.com/img/main-interface.webp",
             "price": "0.00",
             "priceCurrency": "USD",
+            "availability": "http://schema.org/InStock",
             "category": "Free Forever",
-            "description": "Access to all basic features, real-time data monitoring, and community support."
+            "description": "Access to all basic features, real-time data monitoring, and community support.",
+            "hasMerchantReturnPolicy": true,
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0.00",
+                "currency": "USD"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "value": 0,
+                  "unitCode": "h"
+                }
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "US"
+              }
+            }
           },
           {
             "@type": "Offer",
             "url": "https://weed-garden.com/pricing",
-            "price": "Pay what you want",
+            "image": "https://weed-garden.com/img/main-interface.webp",
+            "price": "0.00",
             "priceCurrency": "USD",
+            "availability": "http://schema.org/InStock",
             "category": "Pay What You Want",
-            "description": "Everything in the Free tier, plus priority feature requests and direct support."
+            "description": "Everything in the Free tier, plus priority feature requests and direct support.",
+            "hasMerchantReturnPolicy": true,
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0.00",
+                "currency": "USD"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "value": 0,
+                  "unitCode": "h"
+                }
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "US"
+              }
+            }
           },
           {
             "@type": "Offer",
             "url": "https://weed-garden.com/pricing",
-            "price": "Custom",
+            "image": "https://weed-garden.com/img/main-interface.webp",
+            "price": "0.00",
             "priceCurrency": "USD",
+            "availability": "http://schema.org/InStock",
             "category": "Custom Support",
-            "description": "Tailored solutions, custom integrations, and dedicated support for larger operations."
+            "description": "Tailored solutions, custom integrations, and dedicated support for larger operations.",
+            "hasMerchantReturnPolicy": true,
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0.00",
+                "currency": "USD"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "value": 0,
+                  "unitCode": "h"
+                }
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "US"
+              }
+            }
           }
         ]
       })
