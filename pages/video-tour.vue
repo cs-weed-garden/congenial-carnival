@@ -112,7 +112,7 @@ useHead({
         "name": "Weed Garden Flyover Video",
         "description": "Watch the Weed Garden Flyover Video to see how our ERP solution can help streamline cannabis cultivation, track inventory, ensure compliance, and optimize costs.",
         "thumbnailUrl": "https://weed-garden.com/img/flyover-video-thumbnail.png",
-        "uploadDate": "2024-10-12",
+        "uploadDate": "2024-10-12T00:00:00Z",
         "publisher": {
           "@type": "Organization",
           "name": "Weed Garden Inc.",
