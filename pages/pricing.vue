@@ -21,6 +21,7 @@ useHead({
         "@type": "Product",
         "name": "Weed Garden ERP Software",
         "description": "Explore our flexible pricing options for Weed Garden cannabis ERP software. Pay what you want or start for free and upgrade as your needs grow.",
+        "image": "https://weed-garden.com/img/main-interface.webp",
         "brand": {
           "@type": "Brand",
           "name": "Weed Garden Inc.",
