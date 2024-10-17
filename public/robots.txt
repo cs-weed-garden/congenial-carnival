@@ -1,14 +1,6 @@
-# Allow all bots to crawl the site
 User-agent: *
 Disallow:
 
-# Optional: Crawl delay to reduce server load
-Crawl-delay: 10
-
-# Sitemaps for better crawling
 Sitemap: https://weed-garden.com/sitemap.xml
 Sitemap: https://blog.weed-garden.com/sitemap.xml
 Sitemap: https://blog.weed-garden.com/sitemap-posts.xml
-
-# Optional: Preferred domain (if needed)
-Host: https://weed-garden.com
