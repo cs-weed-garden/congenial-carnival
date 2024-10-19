@@ -74,7 +74,7 @@ export default defineNuxtConfig({
   modules: ['@vesp/nuxt-fontawesome'],
   fontawesome: {
     icons: {
-      brands: ['envira'],
+      brands: ['envira', 'square-facebook', 'discord', 'square-twitter', 'square-youtube'],
       solid: ['map', 'handshake', 'blog', 'cart-shopping', 'chevron-down', 'ellipsis', 'tags', 'tools', 'video', 'house', 'bars', 'arrow-right-to-bracket']
     }
   }

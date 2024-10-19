@@ -61,12 +61,12 @@ useHead({
         <div class="flex mt-7 space-x-4 justify-center">
           <a href="https://www.facebook.com/WeedGardenERP" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center px-6 py-4 bg-blue-600 text-light-50 font-semibold rounded-lg hover:bg-blue-700 transition-colors text-xl">
-            <i class="fab fa-facebook text-2xl mr-3"></i>
+            <font-awesome class="text-2xl mr-3" :icon="['fab', 'square-facebook']" />
             <span>Follow Us on Facebook</span>
           </a>
           <a href="https://discord.gg/sXvNqTH3" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center px-6 py-4 bg-indigo-600 text-light-50 font-semibold rounded-lg hover:bg-indigo-700 transition-colors text-xl">
-            <i class="fab fa-discord text-2xl mr-3"></i>
+            <font-awesome class="text-2xl mr-3" :icon="['fab', 'discord']" />
             <span>Join Our Discord</span>
           </a>
         </div>
@@ -90,15 +90,11 @@ useHead({
         <div class="flex flex-col lg:flex-row justify-start mt-9 space-y-4 lg:space-y-0 lg:space-x-4">
           <a href="https://www.facebook.com/WeedGardenERP" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-3 bg-blue-600 text-light-50 font-semibold rounded-lg hover:bg-blue-700 transition-colors">
             <span>Follow Us on Facebook</span>
-            <client-only>
-              <i class="fab fa-facebook ml-2"></i>
-            </client-only>
+            <font-awesome class="text-2xl mr-3" :icon="['fab', 'square-facebook']" />
           </a>
           <a href="https://ghost.weed-garden.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-3 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
             <span>Subscribe to Our Blog</span>
-            <client-only>
-              <i class="fas fa-blog ml-2"></i>
-            </client-only>
+            <font-awesome class="mr-2" icon="blog" />
           </a>
         </div>
       </div>
@@ -138,11 +134,7 @@ useHead({
     </div>
   </div>
 </section>
-
-
-
-
-
+  
   <section class="relative py-20 lg:py-28 bg-dark-900 text-light-50">
     <div class="py-12 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-12">
