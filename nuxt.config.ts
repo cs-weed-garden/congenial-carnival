@@ -70,4 +70,12 @@ export default defineNuxtConfig({
       ]
     }
   },
+
+  modules: ['@vesp/nuxt-fontawesome'],
+  fontawesome: {
+    icons: {
+      brands: ['envira'],
+      solid: ['map', 'handshake', 'blog', 'cart-shopping', 'chevron-down', 'ellipsis', 'tags', 'tools', 'video', 'house', 'bars', 'arrow-right-to-bracket']
+    }
+  }
 });

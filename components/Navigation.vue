@@ -10,15 +10,11 @@
       <!-- Login Button -->
       <div class="flex items-center md:order-2">
         <a href="https://app.weed-garden.com/login" class="text-white bg-primary hover:bg-primary-light font-medium rounded-lg text-sm px-4 py-2 focus:outline-none">
-          
-            <i class="fa-light fa-sign-in-alt mr-2"></i>
-          
+          <font-awesome class="mr-2" icon="arrow-right-to-bracket" />
           Login
         </a>
         <button @click="toggleMobileMenu" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none">
-          
-            <i class="fa-light fa-bars"></i>
-          
+          <font-awesome class="mr-2" icon="bars" />
         </button>
       </div>
 
@@ -27,33 +23,25 @@
         <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
           <li>
             <a href="/" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
-              
-                <i class="fa-light fa-house mr-2"></i>
-              
+              <font-awesome class="mr-2" icon="house" />
               Home
             </a>
           </li>
           <li>
             <a href="/video-tour" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
-              
-                <i class="fa-light fa-video mr-2"></i>
-              
+              <font-awesome class="mr-2" icon="video" />
               Video Tour
             </a>
           </li>
           <li>
             <a href="/features" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
-              
-                <i class="fa-light fa-tools mr-2"></i>
-              
+              <font-awesome class="mr-2" icon="tools" />
               Features
             </a>
           </li>
           <li>
             <a href="/pricing" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
-              
-                <i class="fa-light fa-tags mr-2"></i>
-              
+              <font-awesome class="mr-2" icon="tags" />
               Pricing
             </a>
           </li>
@@ -61,13 +49,9 @@
           <!-- "More" Mega Menu -->
           <li class="relative">
             <button @click="toggleMegaMenu" class="flex items-center justify-between w-full py-2 px-3 font-medium text-white hover:bg-gray-700 rounded-md md:w-auto">
-              
-                <i class="fa-light fa-ellipsis-h mr-2"></i>
-              
+              <font-awesome class="mr-2" icon="ellipsis" />
               More
-              
-                <i class="fa-light fa-chevron-down ml-2"></i>
-              
+              <font-awesome class="mr-2" icon="chevron-down" />
             </button>
 
             <!-- Mega Menu Content -->
@@ -76,9 +60,7 @@
                 <li>
                   <a href="/affiliate-links" class="block hover:bg-gray-700 p-2 rounded-lg" @click="closeMegaMenu">
                     <div class="flex items-center">
-                      
-                        <i class="fa-solid fa-cart-shopping mr-2 text-lg align-middle"></i>
-                      
+                      <font-awesome class="mr-2" icon="cart-shopping" />
                       Amazon Affiliate Links
                     </div>
                   </a>
@@ -86,9 +68,7 @@
                 <li>
                   <a href="/blog" class="block hover:bg-gray-700 p-2 rounded-lg" @click="closeMegaMenu">
                     <div class="flex items-center">
-                      
-                        <i class="fa-solid fa-blog mr-2 text-lg align-middle"></i>
-                      
+                      <font-awesome class="mr-2" icon="blog" />
                       Blog
                     </div>
                   </a>
@@ -96,9 +76,7 @@
                 <li>
                   <a href="/mission" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
                     <div class="flex items-center">
-                      
-                        <i class="fa-solid fa-badge-check mr-2 text-lg align-middle"></i>
-                      
+                      <font-awesome class="mr-2" :icon="['fab', 'envira']" />
                       Mission
                     </div>
                   </a>
@@ -106,9 +84,7 @@
                 <li>
                   <a href="/about-us" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
                     <div class="flex items-center">
-                      
-                        <i class="fa-solid fa-handshake mr-2 text-lg align-middle"></i>
-                      
+                      <font-awesome class="mr-2" icon="handshake" />
                       About Us
                     </div>
                   </a>
@@ -116,9 +92,7 @@
                 <li>
                   <a href="https://chronictrails.com" target="_blank" class="block py-2 px-3 text-white hover:bg-gray-700 rounded-md" @click="closeMegaMenu">
                     <div class="flex items-center">
-                      
-                        <i class="fa-solid fa-map mr-2 text-lg align-middle"></i>
-                      
+                      <font-awesome class="mr-2" icon="map" />
                       Chronic Trails
                     </div>
                   </a>
