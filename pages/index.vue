@@ -90,11 +90,11 @@ useHead({
         <div class="flex flex-col lg:flex-row justify-start mt-9 space-y-4 lg:space-y-0 lg:space-x-4">
           <a href="https://www.facebook.com/WeedGardenERP" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-3 bg-blue-600 text-light-50 font-semibold rounded-lg hover:bg-blue-700 transition-colors">
             <span>Follow Us on Facebook</span>
-            <font-awesome class="text-2xl mr-3" :icon="['fab', 'square-facebook']" />
+            <font-awesome class="text-2xl ml-3" :icon="['fab', 'square-facebook']" />
           </a>
           <a href="https://ghost.weed-garden.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-3 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
             <span>Subscribe to Our Blog</span>
-            <font-awesome class="mr-2" icon="blog" />
+            <font-awesome class="text-2xl ml-3" icon="blog" />
           </a>
         </div>
       </div>
@@ -127,9 +127,10 @@ useHead({
         Whether you’re cultivating at home or running a licensed operation, our tools help you reduce manual tasks and stay compliant.
       </p>
       <div class="flex mt-4">
-        <NuxtLink to="/about-us" class="inline-block px-4 py-2 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
+        <a href="/about-us" class="inline-block px-4 py-2 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
+          <font-awesome class="text-2xl mr-3" icon="circle-info" />
           <span>Learn more about our mission</span>
-        </NuxtLink>
+        </a>
       </div>
     </div>
   </div>
@@ -154,21 +155,21 @@ useHead({
           <p class="mb-6 font-light text-secondary-200 text-xl">Perfect for getting started.</p>
           <ul class="mb-6 space-y-3 text-xl text-secondary-200 text-left">
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Access to all basic features
             </li>
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Real-time data monitoring
             </li>
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Community support
             </li>
           </ul>
           <a href="https://ghost.weed-garden.com" target="_blank" class="inline-block px-5 py-3 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
             <span>Sign Up for Early Access</span>
-            <i class="fas fa-arrow-right ml-2"></i>
+            <font-awesome class="ml-2" icon="arrow-right" />
           </a>
         </div>
 
@@ -178,21 +179,21 @@ useHead({
           <p class="mb-6 font-light text-dark-900 text-xl">Support us and unlock more features.</p>
           <ul class="mb-6 space-y-3 text-xl text-dark-900 text-left">
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Everything in the Free Tier
             </li>
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Priority feature requests
             </li>
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Direct support
             </li>
           </ul>
           <a href="https://www.facebook.com/WeedGardenERP" target="_blank" class="inline-block px-5 py-3 bg-dark-900 text-light-50 font-semibold rounded-lg hover:bg-dark-700 transition-colors">
             <span>Join Our Facebook Community</span>
-            <i class="fas fa-arrow-right ml-2"></i>
+            <font-awesome class="ml-2" icon="arrow-right" />
           </a>
         </div>
 
@@ -202,24 +203,23 @@ useHead({
           <p class="mb-6 font-light text-secondary-200 text-xl">Need more? Let’s talk about custom solutions.</p>
           <ul class="mb-6 space-y-3 text-xl text-secondary-200 text-left">
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Tailored solutions for your needs
             </li>
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Custom integrations and features
             </li>
             <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <font-awesome class="text-green-500 mr-2" icon="circle-check" />
               Dedicated support
             </li>
           </ul>
           <a href="https://ghost.weed-garden.com" target="_blank" class="inline-block px-5 py-3 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
             <span>Watch Our Product Preview</span>
-            <i class="fas fa-arrow-right ml-2"></i>
+            <font-awesome class="ml-2" icon="arrow-right" />
           </a>
         </div>
-
       </div>
     </div>
   </section>
@@ -236,7 +236,7 @@ useHead({
       <!-- Seed-to-Sale Tracking -->
       <div class="p-6 bg-dark-700 dark:bg-gray-800 border border-gray-600 rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <div class="text-5xl mb-4">
-          <i class="fas fa-seedling text-primary-50"></i>
+          <font-awesome class="text-primary-50" icon="seedling" />
         </div>
         <h3 class="text-2xl font-bold text-light-50">Seed-to-Sale Tracking</h3>
         <p class="mt-4 text-lg text-secondary-200">Track every stage of growth, ensuring complete visibility from planting to final sale.</p>
@@ -245,7 +245,7 @@ useHead({
       <!-- Inventory Management -->
       <div class="p-6 bg-dark-700 dark:bg-gray-800 border border-gray-600 rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <div class="text-5xl mb-4">
-          <i class="fas fa-warehouse text-primary-50"></i>
+          <font-awesome class="text-primary-50" icon="warehouse" />
         </div>
         <h3 class="text-2xl font-bold text-light-50">Inventory Management</h3>
         <p class="mt-4 text-lg text-secondary-200">Gain real-time updates and control over your inventory, optimizing stock levels and reporting.</p>
@@ -254,7 +254,7 @@ useHead({
       <!-- Regulatory Compliance -->
       <div class="p-6 bg-dark-700 dark:bg-gray-800 border border-gray-600 rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <div class="text-5xl mb-4">
-          <i class="fas fa-gavel text-primary-50"></i>
+          <font-awesome class="text-primary-50" icon="gavel" />
         </div>
         <h3 class="text-2xl font-bold text-light-50">Regulatory Compliance</h3>
         <p class="mt-4 text-lg text-secondary-200">Our platform is designed to meet local and federal regulations. METRC integration is a future goal in our development roadmap.</p>
@@ -268,7 +268,7 @@ useHead({
       <NuxtLink to="/features" class="inline-flex items-center px-4 py-2 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
         <span>Learn more about all the features</span>
         <client-only>
-          <i class="fas fa-list ml-2"></i>  
+          <font-awesome class="ml-2" icon="list" /> 
         </client-only>
       </NuxtLink>
     </div>
@@ -287,15 +287,11 @@ useHead({
       <div class="flex flex-col lg:flex-row justify-start space-y-4 lg:space-y-0 lg:space-x-4">
         <a href="https://ghost.weed-garden.com" target="_blank" class="inline-block px-5 py-3 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
           <span>Read Our Blog</span>
-          <client-only>
-            <i class="fas fa-blog ml-2"></i>
-          </client-only>
+          <font-awesome class="ml-3" icon="blog" />
         </a>
         <a href="https://www.facebook.com/WeedGardenERP" target="_blank" class="inline-block px-5 py-3 bg-blue-600 text-light-50 font-semibold rounded-lg hover:bg-blue-700 transition-colors">
           <span>Join Our Facebook Community</span>
-          <client-only>
-            <i class="fab fa-facebook ml-2"></i>
-          </client-only>
+          <font-awesome class="ml-3" :icon="['fab', 'square-facebook']" />
         </a>
       </div>
       <h3 class="mt-6 text-lg leading-relaxed text-secondary-200">

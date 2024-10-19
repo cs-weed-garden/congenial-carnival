@@ -7,9 +7,7 @@
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Feature 1: Seed-to-Sale Tracking -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-seedling text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="seedling" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Seed-to-Sale</span> Cannabis Tracking
@@ -22,9 +20,7 @@
 
         <!-- Feature 2: Inventory Management -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-warehouse text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="warehouse" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Real-Time</span> Inventory Management
@@ -37,9 +33,7 @@
 
         <!-- Feature 3: Regulatory Compliance -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-check-circle text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="check-circle" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Regulatory</span> Compliance
@@ -52,9 +46,7 @@
 
         <!-- Feature 4: Label Generation -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-tag text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="tag" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Automated</span> Label Generation
@@ -67,9 +59,7 @@
 
         <!-- Feature 5: Cost Tracking -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-dollar-sign text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="money-check-dollar" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Comprehensive</span> Cost Tracking
@@ -82,9 +72,7 @@
 
         <!-- Feature 6: Reporting & Analytics -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-chart-pie text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="chart-pie" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">In-Depth</span> Reporting & Analytics
@@ -97,9 +85,7 @@
 
         <!-- Feature 7: Image Tracking -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-camera text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="camera-retro" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Image</span> Tracking
@@ -112,9 +98,7 @@
 
         <!-- Feature 8: Source Management -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-database text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="database" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Cannabis</span> Source Management
@@ -127,9 +111,7 @@
 
         <!-- Feature 9: Notes & Timeline Management -->
         <div class="flex items-center p-6 transition-transform rounded-lg shadow-lg bg-dark-700 hover:scale-105">
-          <client-only>
-            <i class="mr-6 text-5xl fas fa-sticky-note text-primary-50" aria-hidden="true"></i>  
-          </client-only>
+          <font-awesome class="text-primary-50 mr-6 text-5xl" icon="note-sticky" aria-hidden="true" />
           <div>
             <h3 class="mb-2 text-2xl font-bold text-light-50">
               <span class="text-primary-50">Notes</span> & Timeline Management

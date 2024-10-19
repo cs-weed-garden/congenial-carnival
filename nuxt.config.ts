@@ -75,7 +75,16 @@ export default defineNuxtConfig({
   fontawesome: {
     icons: {
       brands: ['envira', 'square-facebook', 'discord', 'square-twitter', 'square-youtube'],
-      solid: ['map', 'handshake', 'blog', 'cart-shopping', 'chevron-down', 'ellipsis', 'tags', 'tools', 'video', 'house', 'bars', 'arrow-right-to-bracket']
+      solid: [
+          'database',
+          'tag',
+          'money-check-dollar',
+          'chart-pie',
+          'note-sticky',
+          'camera-retro',
+          'arrow-right',
+          'list',
+          'circle-check', 'seedling', 'warehouse', 'gavel', 'circle-info', 'map', 'handshake', 'blog', 'cart-shopping', 'chevron-down', 'ellipsis', 'tags', 'tools', 'video', 'house', 'bars', 'arrow-right-to-bracket']
     }
   }
 });
