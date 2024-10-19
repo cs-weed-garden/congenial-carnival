@@ -1,6 +1,7 @@
 <template>
   <section class="relative py-20 transition-colors duration-500 lg:py-28 bg-gradient-to-r from-dark-800 via-primary to-dark-800 text-light-50">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <!-- Header Section -->
       <div class="mb-12 text-center">
         <h2 class="mb-6 text-5xl font-black text-primary-50">Weed Garden Flyover Video</h2>
         <p class="text-xl leading-relaxed lg:text-2xl text-secondary-200">
@@ -8,18 +9,32 @@
         </p>
       </div>
 
+      <!-- Video Section -->
       <div class="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
-        <!-- Video Embed -->
+        <!-- Static Image with Play Button -->
         <div class="relative w-full pb-[56.25%] aspect-w-16 aspect-h-9">
+          <img
+              v-show="!isVideoLoaded"
+              @click="loadVideo"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-lg cursor-pointer z-10"
+              src="/img/flyover-image.png"
+              alt="Flyover Video Thumbnail"
+          />
+          <!-- Show Video on Click -->
           <iframe
+              v-show="isVideoLoaded"
               class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-              src="https://www.youtube-nocookie.com/embed/BkcU4lhMti4?si=qk5OTbMrg53ILAO9"
+              :src="iframeSrc"
               title="Weed Garden Flyover Video"
               frameborder="0"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
           ></iframe>
+          <!-- Play Button Icon -->
+          <div v-if="!isVideoLoaded" class="absolute inset-0 flex justify-center items-center">
+            <span class="text-6xl text-light-50"><i class="fas fa-play"></i></span>
+          </div>
         </div>
 
         <!-- Text Content -->
@@ -35,59 +50,22 @@
           </p>
         </div>
       </div>
-
-      <!-- Call to Action Section -->
-      <div class="mt-16 text-center">
-        <h3 class="mb-6 text-3xl font-extrabold text-primary-50">Interested in Learning More?</h3>
-        <p class="mb-8 text-lg lg:text-xl text-secondary-200">
-          Explore more about our features, stay updated on new developments, and join our community of growers who are transforming the cannabis industry.
-        </p>
-        <div class="flex flex-col lg:flex-row justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <a href="https://ghost.weed-garden.com" target="_blank" class="inline-block px-5 py-3 bg-primary-100 text-dark-900 font-semibold rounded-lg hover:bg-primary-200 transition-colors">
-            <span>Read Our Blog</span>
-            <client-only>
-              <i class="fas fa-blog ml-2"></i>
-            </client-only>
-          </a>
-          <a href="https://www.facebook.com/WeedGardenERP" target="_blank" class="inline-block px-5 py-3 bg-blue-600 text-light-50 font-semibold rounded-lg hover:bg-blue-700 transition-colors">
-            <span>Join Our Facebook Community</span>
-            <client-only>
-              <i class="fab fa-facebook ml-2"></i>
-            </client-only>
-          </a>
-          <a href="/features" class="inline-block px-5 py-3 bg-dark-900 text-light-50 font-semibold rounded-lg hover:bg-dark-700 transition-colors">
-            <span>Explore More Features</span>
-            <client-only>
-              <i class="fas fa-arrow-right ml-2"></i>
-            </client-only>
-          </a>
-        </div>
-      </div>
-
-      <div class="mt-20 text-center border-t border-gray-800 pt-16">
-        <h3 class="mb-8 text-3xl font-black text-primary-50">What Our Beta Users Are Saying</h3>
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div class="p-6 bg-dark-700 rounded-lg shadow-md">
-            <p class="text-xl text-secondary-200">"Weed Garden has transformed how I manage my strawberry growing operations. It's user-friendly, and I love being part of shaping its future."</p>
-            <p class="mt-4 font-semibold text-primary-50">- Sarah M.</p>
-          </div>
-          <div class="p-6 bg-dark-700 rounded-lg shadow-md">
-            <p class="text-xl text-secondary-200">"I appreciate how adaptable the solution is. It feels great knowing my feedback directly impacts the features they develop."</p>
-            <p class="mt-4 font-semibold text-primary-50">- John R.</p>
-          </div>
-          <div class="p-6 bg-dark-700 rounded-lg shadow-md">
-            <p class="text-xl text-secondary-200">"The community support has been fantastic, and it's exciting to contribute to a product that benefits growers like me."</p>
-            <p class="mt-4 font-semibold text-primary-50">- Emily K.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 </template>
 
 <script setup>
-import { useHead } from '@unhead/vue';
+import { ref } from 'vue';
+
+const isVideoLoaded = ref(false);
+const baseIframeSrc = 'https://www.youtube-nocookie.com/embed/BkcU4lhMti4?si=qk5OTbMrg53ILAO9';
+
+const iframeSrc = ref(baseIframeSrc);
+
+const loadVideo = () => {
+  iframeSrc.value = `${baseIframeSrc}&autoplay=1`;
+  isVideoLoaded.value = true;
+};
 
 useHead({
   title: 'Weed Garden Flyover Video | Streamline Your Cannabis Operations',
